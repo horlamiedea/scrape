@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-t=)bcdvtz@m4qd3+ml9m!mn7^**_qq861(uy8gegpf%a@%*zqf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -198,3 +198,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com/', 'https://*.127.0.0.1']
